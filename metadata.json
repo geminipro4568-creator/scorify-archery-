@@ -1,0 +1,6 @@
+{
+  "name": "Scorify - Archery Scoring App",
+  "description": "The modern archery scoring application that helps archers record scores, analyze performance, and improve consistency.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
