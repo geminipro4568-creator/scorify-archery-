@@ -13,6 +13,20 @@
     
     <!-- SVG Favicon with Scorify Target Logo -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%2309090D' stroke='%238B5CF6' stroke-width='2'/><circle cx='50' cy='50' r='40' fill='%2338BDF8'/><circle cx='50' cy='50' r='28' fill='%23EF4444'/><circle cx='50' cy='50' r='16' fill='%23EAB308'/><circle cx='50' cy='50' r='6' fill='%23CA8A04'/><path d='M25 75 L70 30 M70 30 L60 30 M70 30 L70 40' stroke='white' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
+
+    <!-- GitHub Pages SPA Redirect Handler -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
   </head>
   <body class="bg-[#09090D] text-white selection:bg-[#8B5CF6] selection:text-white font-sans antialiased overflow-x-hidden">
     <div id="root"></div>
